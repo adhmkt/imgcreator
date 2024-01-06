@@ -12,6 +12,8 @@ from openai import OpenAI  # Make sure this matches your actual setup for OpenAI
 # my_api_key = "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"
 my_api_key = "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"
 # Why can I do this?
+# Why can I do this?
+# Why can I do this?
 
 # Initialize OpenAI client
 client = OpenAI(api_key=my_api_key)

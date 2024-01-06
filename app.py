@@ -3,14 +3,11 @@ import os
 import json
 from openai import OpenAI  # Make sure this matches your actual setup for OpenAI
 
-# Load API key from config file
-# with open('config.json', 'r') as config_file:
-#     config = json.load(config_file)
-#     my_api_key = config['openai_api_key']
 
-# my_api_key = os.environ.get('OPENAI_API_KEY')
 
-my_api_key = "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"
+my_api_key = os.environ.get('OPENAI_API_KEY')
+
+
 
 
 # Initialize OpenAI client

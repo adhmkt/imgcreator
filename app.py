@@ -8,7 +8,8 @@ from openai import OpenAI  # Make sure this matches your actual setup for OpenAI
 #     config = json.load(config_file)
 #     my_api_key = config['openai_api_key']
 
-my_api_key = os.environ.get('OPENAI_API_KEY')
+# my_api_key = os.environ.get('OPENAI_API_KEY')
+my_api_key = "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"
 
 # Initialize OpenAI client
 client = OpenAI(api_key=my_api_key)

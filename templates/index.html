@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VESPER  Image Generator</title>
+    <title>VESPER  AI Image Enhancer</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
@@ -13,8 +13,15 @@
     </header>
 
     <div class="container">
-        <h1>VESPER  Image Generator</h1>
+        <h1>VESPER  AI Image Enhancer</h1>
         <textarea id="imageRequest" placeholder="Enter your request here..."></textarea>
+        <div class="vesper-toggle-container">
+            <span class="vesper-label">Add Vesper</span>
+            <label class="switch">
+                <input type="checkbox" id="vesperToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
         <button id="generateButton">Generate Image</button>
         <button id="clearButton">Clear</button>
 

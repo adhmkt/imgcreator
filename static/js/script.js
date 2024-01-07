@@ -1,5 +1,13 @@
 document.getElementById('generateButton').addEventListener('click', function() {
     var promptText = document.getElementById('imageRequest').value.trim();
+    
+
+    var addVesper = document.getElementById('vesperToggle').checked;
+
+    var requestData = {
+        text: promptText,
+        addVesper: addVesper
+    };
 
     // Check if the prompt is empty and alert the user if it is
     if (!promptText) {
@@ -16,7 +24,13 @@ document.getElementById('generateButton').addEventListener('click', function() {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({prompt: promptText}) // Send the prompt text under the key 'prompt'
+
+        body: JSON.stringify({
+            prompt: promptText, // Ensure this is the variable holding the user's prompt
+            addVesper: addVesper // The state of the addVesper toggle
+        })
+        //body: JSON.stringify(requestData) 
+        //body: JSON.stringify({prompt: promptText})  Send the prompt text under the key 'prompt'
     })
     .then(response => {
         if (!response.ok) {

@@ -1,10 +1,45 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #020000;
     margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif; /* You can change the font family */
 }
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000; /* Example background color */
+}
+
+header .logo {
+    height: 90px; /* Adjust this value as needed */
+    width: auto; /* This will maintain the aspect ratio of the image */
+}
+
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00000000;/* Example background color */
+    color: #1ec2df;
+}
+
+/* Additional Styling */
+/* Add here any other styles for your page elements */
+
 
 .container {
     background-color: white;
